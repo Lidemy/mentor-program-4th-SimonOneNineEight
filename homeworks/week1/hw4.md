@@ -28,37 +28,37 @@
 
 ### 基礎指令
 
-1. git init → 開始使用對該專案做版本控制
-2. git status → 檢視現在版本狀態
-3. git add → 把檔案加入版本控制
+1. `git init` → 開始使用對該專案做版本控制
+2. `git status` → 檢視現在版本狀態
+3. `git add` → 把檔案加入版本控制
     * 狀態：untrack：不加入版本控制 ← → staged ：加入版本控制
     * 加入/ 移除控制：
-        - 加入單一檔案： git add. 檔名
-        - 加入整個資料夾： git add.
-        - 移除：git rm —cached 檔名
-4. git commit → 建立一個新的版本
+        - 加入單一檔案： `git add. + 檔名`
+        - 加入整個資料夾： `git add.`
+        - 移除：`git rm —cached + 檔名`
+4. `git commit` → 建立一個新的版本
     1. 輸入 git commit 後輸入一個 commit message 來描述版本後建立新版本
-    2. 輸入 git commit -m  " commit message " 來直接建立新版本和 commit message
+    2. 輸入 `git commit -m  " commit message "` 來直接建立新版本和 commit message
     - Note.
-        - git commit -am 如果沒有新檔案，可以用這個指令省略掉 git add. 的動作
-        - 如果要改 commit message → git commit —amend
-        - 如果想要刪除 commit → git reset HEAD^ —hard（直接刪除最新 commit 的整個檔案）/ git reset HEAD^ — soft（刪除 commit 這個動作）
-5. git log → 歷史紀錄
-    - git log —oneline → 比較簡約的歷史紀錄
-6. git checkout → 切換到某個版本
-    - git checkout + 版本號碼 → 切換到該版本
-    - git checkout master → 切換到當前版本
-    - git checkout — + name → 把檔案回復到上一次 commit 的狀態
-7. git diff → 可以看更改的地方
-- .gitignore → 一個放所以不想要加入版本控制的檔案
+        - `git commit -am` 如果沒有新檔案，可以用這個指令省略掉 git add. 的動作
+        - 如果要改 commit message → `git commit —amend`
+        - 如果想要刪除 commit → `git reset HEAD^ —hard`（直接刪除最新 commit 的整個檔案）/ `git reset HEAD^ — soft`（刪除 commit 這個動作）
+5. `git log` → 歷史紀錄
+    - `git log —oneline` → 比較簡約的歷史紀錄
+6. `git checkout` → 切換到某個版本
+    - `git checkout + 版本號碼` → 切換到該版本
+    - `git checkout master` → 切換到當前版本
+    - `git checkout — + name` → 把檔案回復到上一次 commit 的狀態
+7. `git diff` → 可以看更改的地方
+- `.gitignore` → 一個放所以不想要加入版本控制的檔案
 
 ### 如何建立專案？
 
-1. git init → 讓資料夾被 git 控制
-2. git status → 檢視裡面的狀況
-3. 建立 .gitignore 檔案，把不會用到的東西排除掉
-4. git add. → 把所有要版本控制的檔案新增到 staged
-5. git commit -am "commit message" → 建立第一個版本
+1. `git init` → 讓資料夾被 git 控制
+2. `git status` → 檢視裡面的狀況
+3. 建立 `.gitignore` 檔案，把不會用到的東西排除掉
+4. `git add.` → 把所有要版本控制的檔案新增到 staged
+5. `git commit -am "commit message"` → 建立第一個版本
 
 Note. 如果有新檔案要記得把他 add  到 staged 裡面 
 
@@ -74,12 +74,12 @@ Note. 主幹 = master
 
 ### Branch 指令
 
-1. git branch + branch-name→ 建立名為...的新 branch
-    - 更改名稱 → git branch -m + new-name
-2. git branch -d + branch-name → 建立名為...的 branch
-3. git branch -v  → 查看有哪些 branch & 自己在哪個 branch
-4. git checkout + branch-name → 轉換到 branch-name 底下
-5. git merge + branch-name → 把 branch-name 合併到 master 裡面  
+1. `git branch + branch-name`→ 建立名為...的新 branch
+    - 更改名稱 → `git branch -m + new-name`
+2. `git branch -d` + branch-name → 建立名為...的 branch
+3. `git branch -v`  → 查看有哪些 branch & 自己在哪個 branch
+4. `git checkout + branch-name` → 轉換到 branch-name 底下
+5. `git merge + branch-name`→ 把 branch-name 合併到 master 裡面  
     → 在 merge 的時候遇到衝突，看 git 說哪些檔案衝突，手動決定留下哪一個
 
 ## Git 連動 GitHub
@@ -90,9 +90,9 @@ Note. 主幹 = master
 
 ### 把 repository 上傳之後：
 
-1. git push →  把電腦的東西同步到 Github 上： git push origin + name （檔案或 branch 都可以）
-2. git pull → 把 Github 上的東西同步回電腦：git pull origin + 要同步的東西
+1. `git push` →  把電腦的東西同步到 Github 上： git push origin + name （檔案或 branch 都可以）
+2. `git pull` → 把 Github 上的東西同步回電腦：git pull origin + 要同步的東西
 
     Note. 抓下遠端（GitHub上）的 branch → git branch + name
 
-3. pull request → 在 Github 上的 merge ( 有可能是別人請你 merge 進你的 master）
+3. `pull request` → 在 Github 上的 merge ( 有可能是別人請你 merge 進你的 master）
