@@ -27,10 +27,11 @@
     "url": "https://github.com/Lidemy/mentor-program-4th/issues"
   },
   "homepage": "https://github.com/Lidemy/mentor-program-4th#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
