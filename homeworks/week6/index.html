@@ -142,14 +142,14 @@
     }
 
     .comment {
-      padding-top: 95px;
+      padding: 95px 15px 0px 15px;
       display: flex;
       justify-content: center;
     }
 
     .comment__content {
       position: relative;
-      max-width: 565px;
+      width: 30%;
       max-height: 205px;
       padding: 70px 19px 39px 24px;
       border: #c7e5ec 1px solid;
@@ -293,11 +293,15 @@
       }
       
       .comment {
+        max-width: 80%;
         flex-direction: column;
+        justify-content: space-between;
+        padding:0;
       }
 
       .comment__content + .comment__content {
         margin-top: 100px;
+        margin-left: 0;
       }
     }
 
