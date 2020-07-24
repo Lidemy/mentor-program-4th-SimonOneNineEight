@@ -142,20 +142,24 @@
     }
 
     .comment {
-      padding-top: 95px;
+      padding: 95px 15px 0px 15px;
       display: flex;
       justify-content: center;
     }
 
     .comment__content {
+      flex: 1;
       position: relative;
       max-width: 565px;
       max-height: 205px;
       padding: 70px 19px 39px 24px;
       border: #c7e5ec 1px solid;
+      flex-wrap: wrap;
+      border-radius: 5px;
+      box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
     }
 
-    .comment__content + .comment__content {
+    .comment__content:not(:first-child) {
       margin-left: 16px;
     }
 
@@ -294,10 +298,17 @@
       
       .comment {
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .comment__content {
+        max-width: 100%;
       }
 
       .comment__content + .comment__content {
         margin-top: 100px;
+        margin-left: 0;
       }
     }
 
