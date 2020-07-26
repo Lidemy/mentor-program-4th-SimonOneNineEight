@@ -1,16 +1,12 @@
-@import url('normalize.css')
-
-.debug *, .debug {
-  outline: 1px solid gold;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
+@import url('normalize.css');
 
 body {
-  background: grey;
+  background: rgba(0,0,0,0.3);
+}
+
+＊ {
+  margin: 0px;
+  padding: 0px;
 }
 
 .wrapper {
@@ -20,7 +16,7 @@ body {
 
 .form {
   width: 645px;
-  height: 1200px;
+  height: 1280px;
   background: white;
   position: relative;
   left: 50%;
@@ -82,19 +78,23 @@ h1 {
 
 .question {
   display: flex;
-  margin-top: 49px;
+  margin-top: 40px;
 }
 
 h2 {
   font-family: MicrosoftJhengHei;
   font-size: 20px;
   margin-right: 5px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.answer__blank{
+
+.answer__blank input{
   border: solid 1px #d0d0d0;
   width: 287px;
   height: 23px;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -117,7 +117,7 @@ h2 {
 }
 
 
-.choice {
+.option input {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -141,16 +141,19 @@ h2 {
   margin-top: 55px;
 }
 
-.form__summit div + div {
+.form__summit div {
   margin-top: 21px;
   margin-bottom: 35px;
 }
 
-.summit{
+.form_submit_botton{
   display: inline;
   padding: 13px 32px;
   border-radius: 3px;
   background: #fad312;
+  border: 1px solid #fad312;
+  font-family: MicrosoftJhengHei;
+  font-size: 15px;
 }
 
 
@@ -186,10 +189,16 @@ h2 {
   }
 
   .form__data {
-    padding-left: 20px;
+    padding-left: 150px;
   }
 
   .bottom-bar {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .form__data {
+    padding-left: 20px;
   }
 }

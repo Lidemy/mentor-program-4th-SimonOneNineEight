@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class='wrapper'>
-    <div class='form'>
+    <form class='form'>
       <div class='top-bar'></div>
       <div class='form__data'>
         <div><h1>新拖延運動報名表單</h1></div>
@@ -27,7 +27,7 @@
               <div class='star'>*</div>
             </div>
             <div class='answer__blank'>
-              <div>您的回答</div>
+              <input type='text' name='nickname' placeholder='您的回答'>
             </div>
           </div>
           <div>
@@ -36,7 +36,9 @@
               <div class='star'>*</div>
             </div>
             <div class='answer__blank'>
-              <div>您的電子郵件</div>
+              <div>
+                <input type='text' name='email' placeholder='您的電子郵件'>
+              </div>
             </div>
           </div>
           <div>
@@ -45,7 +47,7 @@
               <div class='star'>*</div>
             </div>
             <div class='answer__blank'>
-              <div>您的手機號碼</div>
+              <input type='text' name='phone' placeholder='您的手機號碼'>
             </div>
           </div>
           <div>
@@ -55,12 +57,16 @@
             </div>
             <div class='answer__choose'>
               <div class='option' >
-                <div class='choice'></div>
-                <div>躺在床上用想像力實作</div>
+                <label>
+                <input name='choice' value='1' type='radio'>
+                躺在床上用想像力實作
+                </label>
               </div>
               <div class='option' >
-                <div class='choice'></div>
-                <div>趴在地上滑手機找現成的</div>
+                <label>
+                <input name='choice' value='1' type='radio'>
+                趴在地上滑手機找現成的
+                </label>
               </div>
             </div>
           </div>
@@ -70,7 +76,7 @@
               <div class='star'>*</div>
             </div>
             <div class='answer__blank'>
-              <div>您的回答</div>
+              <input type='text' name='whyKnow' placeholder='您的回答'>
             </div>
           </div>
           <div>
@@ -79,16 +85,16 @@
               <div>對活動的一些建議</div>
             </div>
             <div class='answer__blank'>
-              <div>您的回答</div>
+              <input type='text' name='advice' placeholder='您的回答'>
             </div>
           </div>
         </section>
         <section class='form__summit'>
-          <div class='summit'>提交</div>
+          <input class='form_submit_botton' type='submit'>
           <div>請勿透過表單送出您的密碼。</div>
         </section>
       </div>
-    </div>
+    </form>
   </div>
   <div class='bottom-bar'></div>
   <div class='footer'>
