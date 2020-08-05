@@ -1,0 +1,356 @@
+@import url('./normalize.css');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+  display: flex;
+  height: 84px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px
+}
+
+#site-name {
+  font-family: Questrial;
+  font-size: 36px;
+  color: #489846;
+}
+
+.navbar__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  
+}
+
+.navbar__list li {
+  margin-left: 12px;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+.navbar__list li.active,
+.navbar__list li:hover {
+  background: #ff7286;
+}
+
+.navbar__list li.active a,
+.navbar__list li:hover a {
+  color:white
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  height: 580px;
+  background: url(2.png) center/cover no-repeat;
+}
+
+.banner h1 {
+  display: inline-block;
+  position: relative;
+  color: white;
+  margin: 0;
+  font-family: MicrosoftJhengHei;
+  font-size: 60px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.banner:after {
+  content: '';
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section {
+  text-align: center;
+}
+
+.section__title {
+  display: inline-block;
+  font-family: MicrosoftJhengHei;
+  font-size: 36px;
+  font-weight: bold;
+  border-left: solid 15px #a3dea2;
+  padding-left: 16px;
+  margin-top: 80px;
+}
+
+.section__dec {
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  line-height: 2em;
+  margin: 39px 0px 84px 0px;
+  padding: 0px 12px;
+}
+
+.button {
+  display: inline-block;
+  justify-content: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 36px;
+  font-weight: bold;
+  color: #3e613d;
+  padding: 60px 80px;
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+.button:hover {
+  transform: scale(1.1); 
+}
+
+.btn-order{
+  background: #a8e8e1;
+}
+
+.btn-query{
+  margin-left: 23px;
+  background: #f9f9b5;
+}
+
+.comment {
+  padding: 95px 15px 0px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment__content {
+  flex: 1;
+  position: relative;
+  max-width: 565px;
+  max-height: 205px;
+  padding: 70px 19px 39px 24px;
+  border: #c7e5ec 1px solid;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+}
+
+.comment__content:not(:first-child) {
+  margin-left: 16px;
+}
+
+.comment__name {
+  padding-bottom: 23px;
+}
+
+.comment__images {
+  position: absolute;
+  left: 50%;
+  top: -56px;
+  transform: translate(-50%, 0);
+}
+
+.section__images {
+  display: flex;
+  flex-direction: row;
+  padding-top: 36px;
+}
+.section__images div {
+  width: 25%;
+}
+
+.section__images img {
+  width: 100%;
+}
+
+.section iframe {
+  padding: 36px 0px 43px 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.FAQ {
+  margin-bottom: 40px;
+}
+
+.FAQ__detail {
+  max-width: 800px;
+  margin: 0 25%;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #a6e2c0;
+  margin-top: 29px;
+}
+
+.FAQ__question {
+  display: flex;
+  cursor: pointer;
+}
+
+.FAQ__question-count {
+  font-family: Questrial;
+  font-size: 24px;
+  color: #70b282;
+  font-weight: bold;
+  padding-right: 16px;
+}
+
+.FAQ__question-content {
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  margin: auto 0;
+}
+
+.FAQ__answer {
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  max-width: 720px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 9%;
+  line-height: 24px;
+}
+
+.hide-content {
+  display: none;
+}
+
+.footer__top{
+  background: #e8efee;
+  padding: 40px 0px 40px 0px;
+  color: #484848;
+}
+
+.footer__top .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 106px
+}
+
+.footer__info div {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+}
+
+.footer__info div + div {
+  margin-top: 10px
+}
+
+.footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: right;
+}
+
+.footer__site div + div {
+  margin-top: 10px
+}
+
+.footer__bottom {
+  color: white;
+  background: #35564b;
+  padding: 15px 0px;
+  text-align: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    height: 108px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .navbar__list {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .navbar__list li {
+    flex: 1;
+    margin-left: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .navbar__site-name{
+    margin-top: 12px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .btn-query{
+    margin-left: 0;
+    margin-top: 23px;
+    background: #f9f9b5;
+  }
+
+  .section__images {
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+  }
+  .section__images div {
+    width: 100%;
+  }
+
+  .footer__top .wrapper {
+    flex-direction: column-reverse;
+    padding: 0px 30px;
+  }
+  
+  .footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: left;
+}
+
+  .footer__info div {
+    margin-top: 15px;
+  }
+
+  .footer__bottom {
+    padding: 12px
+  }
+  
+  .comment {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .comment__content {
+    max-width: 100%;
+  }
+
+  .comment__content + .comment__content {
+    margin-top: 100px;
+    margin-left: 0;
+  }
+}

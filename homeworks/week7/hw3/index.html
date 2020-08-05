@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel='stylesheet' href='./main.css' />
+</head>
+<body>
+  <div class='wrapper'>
+    <section class='logo'>
+      <h1>To Do List</h1>
+    </section>  
+  </div>
+  <div class='wrapper'>
+    <div class='add_to_do'>
+      <div class='add_info'>
+        <span class='add_checkbox'></span>
+        <input name='to_do_content' type='text' placeholder='Add to-do' />
+      </div>
+      <button class='submit_to_do'>&#x2714</button>
+    </div>
+  </div>
+  <div class='wrapper'>
+    <div class='to_do_list'>
+      <div class='things_to_do'>
+        <label class='to_do_checkbox'>
+          <input class='checkbox' type='checkbox'/>
+          <span class='checkbox__customize'></span>
+          <span class='check_box_content'>洗臉、刷牙、上廁所</span>
+        </label>
+        <button class='to_do_delete'>&#x2716</button>
+      </div> 
+    </div>
+  </div>
+  <script src='./index.js'></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lazy-form</title>
+  <link rel='stylesheet' href='./main.css' />
+</head>
+<body>
+  <div class='wrapper'>
+    <form class='form'>
+      <div class='top-bar'></div>
+      <div class='form__data'>
+        <div><h1>新拖延運動報名表單</h1></div>
+        <section class='form__info'>
+          <div>活動日期：2020/12/10 ~ 2020/12/11</div>
+          <div>活動地點：台北市大安區新生南路二段1號</div>
+        </section>
+        <section class='form__necessary'>
+          <div class='star'>*</div>
+          <div>必填</div>
+        </section>
+        <section class='form__question'>
+          <div class='name required hide-error'>
+            <div class='question'>
+              <h2>暱稱</h2>
+              <div class='star'>*</div>
+            </div>
+            <div class='answer__blank'>
+              <input type='text' name='nickname' placeholder='您的回答'>
+              <div class='emptyMessage'>暱稱不得為空白</div>
+            </div>
+          </div>
+          <div class='email required hide-error'>
+            <div class='question'>
+              <h2>電子郵件</h2>
+              <div class='star'>*</div>
+            </div>
+            <div class='answer__blank'>
+              <input type='text' name='email' placeholder='您的電子郵件'>
+              <div class='emptyMessage'>電子郵件不得為空白</div>
+            </div>
+          </div>
+          <div class='phone required hide-error'>
+            <div class='question'>
+              <h2>手機號碼</h2>
+              <div class='star'>*</div>
+            </div>
+            <div class='answer__blank'>
+              <input type='text' name='phone' placeholder='您的手機號碼'>
+              <div class='emptyMessage'>手機號碼不得為空白</div>
+            </div>
+          </div>
+          <div class='choose required hide-error'>
+            <div class='question'>
+              <h2>報名類型</h2>
+              <div class='star'>*</div>
+            </div>
+            <div class='answer__choose'>
+              <div class='option' >
+                <label>
+                <input name='choice' value='躺在床上用想像力實作' type='radio'>
+                躺在床上用想像力實作
+                </label>
+              </div>
+              <div class='option' >
+                <label>
+                <input name='choice' value='趴在地上滑手機找現成的' type='radio'>
+                趴在地上滑手機找現成的
+                </label>
+              </div>
+              <div class='emptyMessage'>報名類型不得為空白</div>
+            </div>
+          </div>
+          <div class='whyKnow required hide-error'>
+            <div class='question'>
+              <h2>你怎麼知道這個活動的？</h2>
+              <div class='star'>*</div>
+            </div>
+            <div class='answer__blank'>
+              <input type='text' name='whyKnow' placeholder='您的回答'>
+              <div class='emptyMessage'>請輸入如何知道本活動</div>
+            </div>
+          </div>
+          <div>
+            <div class='question__other'>
+              <h2>其他</h2>
+              <div>對活動的一些建議</div>
+            </div>
+            <div class='answer__blank'>
+              <input type='text' name='advice' placeholder='您的回答'>
+            </div>
+          </div>
+        </section>
+        <section class='form__summit'>
+          <input class='form_submit_button' type='submit'>
+          <div>請勿透過表單送出您的密碼。</div>
+        </section>
+      </div>
+    </form>
+  </div>
+  <div class='bottom-bar'></div>
+  <div class='footer'>
+    <div>© 2020 © Copyright. All rights Reserved.</div>
+  </div>
+  <script src='./index.js'></script>
+</body>
+</html>
