@@ -1,0 +1,330 @@
+@import url('./normalize.css');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+  display: flex;
+  height: 84px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px
+}
+
+#site-name {
+  font-family: Questrial;
+  font-size: 36px;
+  color: #489846;
+}
+
+.navbar__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  
+}
+
+.navbar__list li {
+  margin-left: 12px;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+.navbar__list li.active,
+.navbar__list li:hover {
+  background: #ff7286;
+}
+
+.navbar__list li.active a,
+.navbar__list li:hover a {
+  color:white
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  display: block;
+}
+
+.lottery {
+  position:relative;
+  height: 766px;
+  background-image: url(games-bn.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.lottery__box {
+  position: absolute;
+  height: 580px;
+  width: 500px;
+  background: white;
+  border-radius: 16px;
+  left: 50%;
+  transform: translate(-50%,50px);
+}
+
+.lottery__box h2 {
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #5ec1b6;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.lottery__info {
+  display: flex;
+  margin: 18px 20px;
+  padding-bottom: 20px;
+  border-bottom: dotted 1px #BEBEBE;
+}
+
+
+.lottery__info__title {
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #322929;
+  padding-top: 3px;
+}
+
+.lottery__info__content {
+  max-width: 319px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #322929;
+  line-height: 1.63;
+  margin-left: 22px;
+}
+
+.lottery__info__content li {
+  list-style-type: none;
+}
+
+.go__lottery {
+  width: 400px;
+  height: 55px;
+  margin: 16px 50px;
+  font-family: MicrosoftJhengHei;
+  font-size: 20px;
+  background: #e62a45;
+  color: white;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.go__lottery:hover {
+  transform: scale(1.1);
+}
+
+.lottery__result {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.lottery__result h2 {
+  font-family: MicrosoftJhengHei;
+  font-size: 40px;
+  color: white;
+}
+
+.prize1 {
+  background-image: url(flight-4315953_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.prize2 {
+  background-image: url(living-room-1872192_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.prize3 {
+  background-image: url(youtube-2617510_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+}
+
+.aprize3:before {
+  content: '';
+  position: absolute;
+  background: rgba(255,255,255,0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.noPrize {
+  background-image: none;
+  background: black;
+  color: white;
+}
+
+.lottery__result a {
+  text-decoration: none;
+  background: #e62a45;
+  color: white;
+  padding: 10px 160px;
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+}
+
+.lottery__result div {
+  margin-top: 60px;
+}
+
+.lottery__result a:hover {
+  transform: scale(1.1);
+}
+
+.footer__top{
+  background: #e8efee;
+  padding: 40px 0px 40px 0px;
+  color: #484848;
+}
+
+.footer__top .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 106px
+}
+
+.footer__info div {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+}
+
+.footer__info div + div {
+  margin-top: 10px
+}
+
+.footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: right;
+}
+
+.footer__site div + div {
+  margin-top: 10px
+}
+
+.footer__bottom {
+  color: white;
+  background: #35564b;
+  padding: 15px 0px;
+  text-align: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    height: 108px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .navbar__list {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .navbar__list li {
+    flex: 1;
+    margin-left: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .navbar__site-name{
+    margin-top: 12px;
+  }
+
+  .footer__top .wrapper {
+    flex-direction: column-reverse;
+    padding: 0px 30px;
+  }
+  
+  .footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: left;
+}
+
+  .footer__info div {
+    margin-top: 15px;
+  }
+
+  .footer__bottom {
+    padding: 12px
+  }
+}
+
+@media (max-width: 375px) {
+  .lottery{
+    height: 700px;
+  }
+  .lottery__box {
+    width: 95%;
+    height: 680px;
+    top: -6%;
+  }
+  .go__lottery{
+    width: 70%;
+    margin: 5px 50px;
+  }
+  .lottery__info {
+    display: block;
+  }
+  .lottery__box h2 {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .lottery__info__content{
+    margin-top: 8px;
+  }
+
+  .lottery__result a {
+    padding: 15px 40px;
+  }
+
+  .lottery__result h2 {
+    font-size: 32px;
+  }
+}
