@@ -1,0 +1,166 @@
+@import url('./normalize.css');
+
+body {
+  background: #F7F7F7;
+}
+
+h1, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.test-warning {
+  text-align: center;
+  background: #FFB5B5;
+  margin: 0 auto;
+  padding: 10px;
+  color: #930000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.board {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 3px #e8e8e8;
+  position: relative;
+}
+
+.login_and_register_btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.board_btn {
+  background: white;
+  border: 1px solid	#97CBFF	;
+  font-size: 18px;
+  border-radius: 8%;
+  text-decoration: none;
+  padding: 8px 30px;
+  margin-left: 8px;
+  color: black;
+}
+
+.leave_comments {
+  margin: 40px;
+}
+
+.say_hello {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.leave_comments h1 {
+  padding: 20px 0;
+}
+
+.leave_comments h3 {
+  padding-bottom: 20px;
+}
+
+.leave_comment_form {
+  padding-bottom: 20px;
+}
+
+.input_nickname span {
+  font-size: 18px;
+}
+
+.input_nickname input {
+  border: 0;
+  border-bottom: 1px solid 	#97CBFF;
+  margin-bottom: 15px;
+}
+
+.input_nickname input:focus {
+  outline: 1px solid 	#97CBFF;
+}
+
+.leave_comment_form textarea {
+  width: 100%;
+  border: 1px solid #97CBFF	;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.leave_comment_form textarea:focus {
+  outline: 1px solid 	#97CBFF;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: #EA0000;
+  padding-top: 6px;
+}
+
+.btn_comment_submit  {
+  background: white;
+  width: 100px;
+  height: 40px;
+  border: 1px solid	#97CBFF	;
+  font-size: 18px;
+  border-radius: 8%;
+  cursor: pointer;
+}
+
+.btn_comment_submit:hover {
+  background: #97CBFF;
+}
+
+
+
+.divider {
+  width: 675px;
+  border-bottom: 1px solid	#97CBFF	;
+  margin: 0 auto;
+}
+
+.comments {
+  margin: 0 40px;
+  padding-bottom: 30px;
+  display: flex;
+  max-width: 720px;
+}
+
+.comment_photo {
+  width: 60px;
+  height: 60px;
+  background:	#D2E9FF;
+  border-radius: 50%;
+}
+
+.comment_detail {
+  margin-left: 30px;
+}
+
+.comment_info {
+  display: flex;
+}
+
+.comment_nickname {
+  color: #2894FF;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.comment_created_at {
+  color: #BEBEBE;	
+  font-size: 16px;
+}
+
+.comment_content {
+  font-size: 18px;
+  margin-top: 15px;
+  max-width: 600px;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
