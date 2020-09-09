@@ -1,0 +1,79 @@
+body {
+  background:	#E0E0E0;
+}
+
+.site_title {
+  font-size: 200px;
+  margin-top: 50px;
+}
+
+.container {
+  position: relative;
+}
+
+#add_todo,
+#add_todo:focus {
+  border: 0;
+  outline: 0;
+  width: calc(80vw - 40px);
+  font-size: 20px;
+}
+
+.big_checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.todo_content {
+  display: block;
+  width: calc(80vw - 40px);
+  font-size: 20px;
+  line-height: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.todo_category div,
+.todo_clear_completed,
+.save_todo {
+  cursor: pointer;
+}
+.todo_category div:not(:first-child){
+  padding-left: 20px;
+}
+
+.todo_category div:hover,
+.todo_clear_completed:hover,
+.save_todo:hover {
+  transform: scale(1.2);
+}
+
+.active{
+  transform: scale(1.2);
+}
+
+.custom-control-lg .custom-control-label::before,
+.custom-control-lg .custom-control-label::after {
+    top: 0.1rem !important;
+    left: -2rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.custom-control-lg .custom-control-label {
+    margin-left: 0.5rem !important;
+    font-size: 1.5rem !important;
+}
+
+.todo_no_display {
+  display: none !important;
+}
+
+.todo_checkbox input:checked ~ .todo_content {
+  color:#9D9D9D !important;
+  text-decoration: line-through !important;
+}
+
+.todo_info {
+  display: flex;
+}

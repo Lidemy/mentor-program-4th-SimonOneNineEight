@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>todo list.v2</title>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1 class='site_title text-center font-weight-lighter'>todos</h1>
+  <div class="container justify-content-center p-3 pb-2 bg-white text-dark shadow-sm p-3 mb-5 rounded">
+    <form class='add_todo_form border-bottom mt-2 pb-3 mb-3'>
+      <div class="input-group input-group-lg d-flex justify-content-between">
+        <input id='add_todo' type="text" class="bg-white text-monospace pl-4" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="add some todos">
+        <button type="button" class="btn btn-outline-secondary mr-3">&#x2714</button>
+      </div>  
+    </form>
+    <div class='todo_list mb-3'>
+    </div>
+    <d class='todo_info justify-content-between text-black-50'>
+      <div><span class='incomplete_todo_count'>0</span> items left</div>
+      <div class='todo_category d-flex'>
+        <div class='todo_category_all'>All</div>
+        <div class='todo_category_active'>Active</div>
+        <div class='todo_category_completed'>Completed</div>
+      </div>
+      <div class='d-flex'>
+        <div class='todo_clear_completed'>Clear Completed</div>
+        <div class='save_todo pl-3'>Save todos</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
