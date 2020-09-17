@@ -1,0 +1,384 @@
+@import url('./normalize.css');
+
+$color-border_and_word: #787878;
+
+$font-family-main: MicrosoftJhengHei;
+
+$font-size-title: 20px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+
+body {
+  background: #F7F7F7;
+}
+
+h1, h3, ul{
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  color: black;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_site-name_and_catalog {
+  display: flex;
+  padding-left: 50px;
+
+  h1 {
+    font-family: $font-family-main;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    padding: 25px 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.nav_catalog,
+.user_option{
+  padding-top: 30px;
+  padding-right: 30px;
+
+  a {
+    font-family: $font-family-main;
+    font-size: $font-size-normal;
+    font-weight: normal;
+    color: $color-border_and_word;
+    text-decoration: none;
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+
+  a {
+    font-family: $font-family-main;
+    font-size: $font-size-normal;
+    font-weight: normal;
+    color: $color-border_and_word;
+    text-decoration: none;
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+}
+
+.nav_catalog{
+  padding-top: 30px;
+  padding-right: 30px;
+
+  a {
+    font-family: $font-family-main;
+    font-size: $font-size-normal;
+    font-weight: normal;
+    color: $color-border_and_word;
+    text-decoration: none;
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+
+  a:visited {
+    color: $color-border_and_word;
+  }
+}
+
+
+.welcome-block {
+  height: 200px;
+  background-image: linear-gradient(to top, #000000, #434343);
+
+  h1 {
+    text-align: center;
+    font-family: $font-family-main;
+    font-size: 28px;
+    font-weight: bold;
+    color: #eeeeee;
+    padding-top: 75px;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $font-family-main;
+    font-size: $font-size-small;
+    font-weight: normal;
+    color: #eeeeee;
+    padding-top: 25px;
+    position: relative;
+  }
+}
+
+.index_site-body {
+  min-height: 1850px;
+}
+
+.site-body {
+  min-height: calc(100vh - 150px);
+}
+
+.board {
+  width: 70%;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, 0);
+  background: white;
+}
+
+.article {
+  margin: 10px;
+  border: 1px solid #9a9a9a;
+
+  &_detail {
+    margin: 30px;
+    position: relative;
+
+    h1 {
+      text-shadow: 1.4px 1.4px 2px #efefef;
+      font-family: $font-family-main;
+      font-size: $font-size-title;
+    }
+  }
+  &_info {
+    background-color: #eeeeee;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+
+    img {
+      padding: 0px 10px 0 20px;
+    }
+
+    div {
+      display: inline-block;
+      font-family: MicrosoftJhengHei;
+      font-size: $font-size-small;
+      color: #8f8f8f;
+      padding: 15px 0;
+    }
+  }
+  
+  &_content {
+    max-height: 135px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 23px;
+    overflow: hidden;
+
+    &_all {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      line-height: 23px;
+    }
+  }
+}
+
+
+
+
+.update_article {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-family: $font-family-main;
+  font-size: $font-size-small;
+  color: #a8a8a8;
+  padding: 3px 5px;
+  border: solid 1px #a8a8a8;
+  text-decoration: none;
+}
+
+.read_more_btn {
+  font-family: MicrosoftJhengHei;
+  font-size: $font-size-small;
+  padding: 10px 15px;
+  border: solid 1px #737373;
+  text-decoration: none;
+  color: black;
+
+  :visited {
+    color: black;
+  }
+}
+
+.page_info {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.paginator {
+  margin: 30px 0 40px;
+  text-align: center;
+
+  a {
+    padding: 2px 5px 1px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  font-family: MicrosoftJhengHei;
+  font-size: $font-size-small;
+  color: #fefefe;
+  text-align: center;
+  padding: 10px 0;
+  background: #323232;
+}
+
+.login-wrapper {
+  margin: 0 auto;
+  border: solid 1px #000000;
+  width: 527px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 62px 72px;
+  margin-top: -30px;
+  background: white;
+
+  form, input {
+    width: 100%;
+  }
+
+  input[type=submit] {
+    height: 56px;
+    background-image: linear-gradient(to top, #000000, #434343);
+    color: white;
+    margin-top: 73px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+  
+  & + & {
+    margin-top: 23px;
+  }
+}
+
+.input__field {
+  margin-top: 16px;
+  height: 40px;
+}
+
+.input__label {
+  font-size: $font-size-small;
+  margin-left: 21px;
+}
+
+.error_message {
+  color: red;
+  padding-top: 20px;
+}
+
+.admin_article {
+  padding-top: 10px;
+  margin: 10px;
+  border-bottom: 1px solid #9a9a9a;
+
+  h1 {
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-family: $font-family-main;
+    font-size: $font-size-title;
+  }
+
+  &_detail {
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+  }
+  
+}
+
+.admin_created_at {
+  font-family: MicrosoftJhengHei;
+  font-size: $font-size-small;
+  color: #8f8f8f;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+.modify-btn a {
+  font-family: MicrosoftJhengHei;
+  font-size: $font-size-small;
+  color: #a8a8a8;
+  padding: 3px 5px;
+  border: solid 1px #a8a8a8;
+  text-decoration: none;
+}
+
+.add_article {
+  &_h1 {
+    padding: 20px;
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-family: MicrosoftJhengHei;
+    font-size: 24px; 
+  }
+  
+  &_form {
+    padding: 0 20px;
+
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: solid 1px #d7d7d7;
+    }
+    
+    select {
+      width: 100%;
+      padding: 7px;
+      margin-bottom: 20px;
+      border: solid 1px #d7d7d7;
+    }
+    
+    textarea {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      border: solid 1px #d7d7d7;
+    }
+  
+    button {
+      box-sizing: border-box;
+      width: 130px;
+      height: 40px;
+      margin-bottom: 20px;
+      border: solid 1px #d7d7d7;
+      background: white;
+    }
+  }
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
