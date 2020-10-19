@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>登入</h2>
+      <div class='login__info'>
+        <form method='POST' action='/login'>
+          <div class="input__wrapper">
+            <div class="input__label">USERNAME</div>
+            <input class="input__field" type="text" name="username" />
+          </div>
+          <div class="input__wrapper">
+            <div class="input__label">PASSWORD</div>
+            <input class="input__field" type="password" name="password" />
+          </div>
+          <input type='submit' value="登入" class='login_btn' />
+        </form>
+        </div>
+        <% if(errorMessage) { %>
+          <div class='errorMessage'><%= errorMessage %></div>
+        <% } %>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+  <script src='index.js'></script>
+</body>
+</html>

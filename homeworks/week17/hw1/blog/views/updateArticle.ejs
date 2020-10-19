@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head') %>
+</head>
+<body>
+  <div class='navbar'>
+    <%- include('../template/navbar') %>
+  </div>
+  <div class='welcome-block'>
+    <%- include('../template/welcomeBlock') %>
+  </div>
+  <div class='site-body'>
+    <div class='board'>
+      <section class='article'>
+        <h1 class='add_article_h1'>編輯文章 ：</h1>
+        <form class='add_article_form' method='POST' action=<%=`/update/${article.id}`%>>
+          <div><input name='title' value=<%= `${article.title}` %> /></div>
+          <div><select name='TagId'>
+            <option value=<%= `${article.TagId}` %> selected><%= article.Tag.name %></option>
+            <% for(const tag of tags) { %>
+              <option value=<%= `${tag.id}`%>><%= tag.name %></option>
+            <% } %>
+          </select></div>
+          <div><textarea name='content' rows='5'><%= article.content %></textarea></div>
+          <div class='submit-btn'>
+            <h3 class='error_message'><%= errorMessage %></h3>
+            <button type='submit'>確認編輯</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <div class='footer'>
+    <%- include('../template/footer') %>
+  </div>
+</body>
+</html>

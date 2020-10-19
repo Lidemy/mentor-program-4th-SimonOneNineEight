@@ -1,0 +1,299 @@
+@import url('./normalize.css');
+
+
+*, nav, footer{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+  display: flex;
+  height: 84px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px
+}
+
+.site-name a {
+  font-family: Questrial;
+  font-size: 36px;
+  color: #489846;
+  text-decoration: none;
+}
+
+.navbar__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  
+}
+
+.navbar__list li {
+  margin-left: 12px;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+.navbar__list li.active,
+.navbar__list li:hover {
+  background: #ff7286;
+}
+
+.navbar__list li.active a,
+.navbar__list li:hover a {
+  color:white
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  display: block;
+}
+
+.lottery {
+  background-image: url(../img/games-bn.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 3% 25%;
+}
+
+.lottery__box {
+  height: 100%;
+  background: white;
+  border-radius: 16px;
+  margin: 0 20%
+}
+
+.lottery__box h2 {
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #5ec1b6;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.lottery__info,
+.lottery__prize__list {
+  margin: 18px 20px;
+}
+
+
+.lottery__info__title {
+  font-family: MicrosoftJhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #322929;
+  padding-top: 3px;
+}
+
+.lottery__info__content {
+  max-width: 319px;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  text-align: left;
+  color: #322929;
+  line-height: 1.63;
+}
+
+.lottery__info__detail {
+  margin: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted black;
+}
+
+.lottery__info__modify {
+  padding-top: 28px;
+}
+
+.prize__modify-btn{
+  text-decoration:none;
+  text-align: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 12px;
+  background: #e62a45;
+  color: white;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  padding: 3px 5px;
+}
+
+.total__percentage {
+  margin: 0px 30px;
+}
+
+.login__info{
+  margin: 0 15%;
+}
+
+.login_btn{
+  width: 100%;
+  text-align: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 20px;
+  background: #e62a45;
+  color: white;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+
+.input__label{
+  width: 98%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.input__field{
+  width: 98%
+}
+
+.errorMessage{
+  color: red;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.total__percentage{
+  padding-bottom: 20px;
+}
+
+.lottery__result {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+
+footer{
+  height: 100%;
+}
+
+.footer__top{
+  background: #e8efee;
+  padding: 40px 0px 40px 0px;
+  color: #484848;
+}
+
+.footer__top .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 106px
+}
+
+.footer__info div {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+}
+
+.footer__info div + div {
+  margin-top: 10px
+}
+
+.footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: right;
+}
+
+.footer__site div + div {
+  margin-top: 10px
+}
+
+.footer__bottom {
+  color: white;
+  background: #35564b;
+  padding: 15px 0px;
+  text-align: center;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    height: 108px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .navbar__list {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .navbar__list li {
+    flex: 1;
+    margin-left: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .navbar__site-name{
+    margin-top: 12px;
+  }
+
+  .footer__top .wrapper {
+    flex-direction: column-reverse;
+    padding: 0px 30px;
+  }
+  
+  .footer__site div {
+  font-family: Questrial;
+  font-size: 14px;
+  text-align: left;
+}
+
+  .footer__info div {
+    margin-top: 15px;
+  }
+
+  .footer__bottom {
+    padding: 12px
+  }
+}
+
+@media (max-width: 375px) {
+  .lottery{
+    height: 700px;
+  }
+  .lottery__box {
+    width: 95%;
+    height: 680px;
+    top: -6%;
+  }
+  .go__lottery{
+    width: 70%;
+    margin: 5px 50px;
+  }
+  .lottery__info {
+    display: block;
+  }
+  .lottery__box h2 {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .lottery__info__content{
+    margin-top: 8px;
+  }
+}
