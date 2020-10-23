@@ -1,0 +1,4 @@
+@mixin banner($background-img){
+  height: 500px;
+  background: $background-img center/cover no-repeat;
+}

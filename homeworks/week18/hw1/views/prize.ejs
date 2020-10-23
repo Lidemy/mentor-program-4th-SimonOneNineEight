@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/admin/head') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/admin/navbar') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2><%= prize.name %></h2>
+      <div class='lottery__info'>
+        <div class='lottery__info__detail'>
+          <div class='lottery__info__content'>
+            <div>獎項名稱：<%= prize.name %></div>
+            <div>中獎機率：<%= Math.round(prize.percentage *= 100) %>%</div>
+            <div>圖片網址：<a href=<%=`${prize.imgUrl}`%>><%= prize.imgUrl %></a></div>
+            <div>獎項描述：<%= prize.discription %></div>
+          </div>
+          <% if(userSessionId) { %>
+            <div class='prize__modify'>
+              <a class='prize__modify-btn' href=<%=`/update/${prize.id}`%>>UPDATE</a>
+              <a class='prize__modify-btn' href=<%=`/delete/${prize.id}`%>>DELETE</a>
+            </div>
+          <% } %>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+  <script src='index.js'></script>
+</body>
+</html>
