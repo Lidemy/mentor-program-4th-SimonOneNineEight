@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/main') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>2020 夏日輕盈特賞！ 抽獎活動辦法</h2>
+      <div class='lottery__info'>
+        <div class='lottery__info__title'>活動期間：</div>
+        <div class='lottery__info__content'>2020/06/01~2020/07/01</div>
+      </div>
+      <div class='lottery__info'>
+        <div class='lottery__info__title'>活動說明：</div>
+        <div class='lottery__info__content'>今天老闆佛心來著決定給大家發獎勵，有看有機會，沒看只能幫QQ！</div>
+      </div>
+      <div class='lottery__info'>
+        <div class='lottery__info__title'>獎  品：</div>
+        <ul class='lottery__prize__list'>
+          <% for (const prize of prizes) { %>
+            <li>❤ <%= prize.name %>: <%= prize.discription%> </li>
+          <% } %>
+        </ul>
+      </div>
+      <form action='/lottery' method='POST'>
+        <button class='go__lottery'>我要抽獎</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

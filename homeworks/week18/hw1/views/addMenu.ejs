@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/menu') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>新增商品</h2>
+      <div class='login__info'>
+        <form method='POST' action='/menu' >
+          <div class="input__wrapper">
+            <div class="input__label">商品名稱：</div>
+            <input class="input__field" type="text" name="name" />
+          </div>
+          <div class="input__wrapper">
+            <div class="input__label">商品價格：</div>
+            <input class="input__field" type="text" name="price" />
+          </div>
+          <div class="input__wrapper">
+            <div class="input__label">圖片：</div>
+            <input class="input__field" type="text" name="image" />
+          </div>
+          <input type='submit' value="新增商品" class='login_btn' />
+        </form>
+        </div>
+        <% if(errorMessage) { %>
+          <div class='errorMessage'><%= errorMessage %></div>
+        <% } %>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/faq') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>新增常見問題</h2>
+      <div class='login__info'>
+        <form method='POST' action='/faq'>
+          <div class="input__wrapper">
+            <div class="input__label">常見問題：</div>
+            <input class="input__field" type="text" name="question" />
+          </div>
+          <div class="input__wrapper">
+            <div class="input__label">問題解答：</div>
+            <textarea class="input__field" type="text" rows="5" name="answer" ></textarea>
+          </div>
+          <input type='submit' value="新增常見問題" class='login_btn' />
+        </form>
+        </div>
+        <% if(errorMessage) { %>
+          <div class='errorMessage'><%= errorMessage %></div>
+        <% } %>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

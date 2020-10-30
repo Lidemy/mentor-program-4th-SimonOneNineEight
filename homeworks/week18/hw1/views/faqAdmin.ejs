@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/faq') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>常見問題管理</h2>
+      <div class='lottery__info'>
+        <div class='lottery__info__title'>常見問題列表：</div>
+          <% let questionCount = 1 %>
+          <% for(const faq of faqs) { %>
+            <div class='faq__info__detail'>
+              <div class='lottery__info__content'>
+                <div class='prize__name'><%=`Q${questionCount}.  ${faq.question}` %></div>
+              </div>
+              <% if(userSessionId) { %>
+                <div class='faq__info__modify'>
+                  <a class='prize__modify-btn' href=<%=`/faq/${faq.id}`%>>MORE</a>
+                  <a class='prize__modify-btn' href=<%=`/faq/update/${faq.id}`%>>UPDATE</a>
+                  <a class='prize__modify-btn' href=<%=`/faq/delete/${faq.id}`%>>DELETE</a>
+                </div>
+              <% questionCount++ %>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

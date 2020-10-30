@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head') %>
+</head>
+<body>
+  <div class='navbar'>
+    <%- include('../template/navbar') %>
+  </div>
+  <div class='welcome-block'>
+    <%- include('../template/welcomeBlock') %>
+  </div>
+  <div class='index_site-body'>
+    <div class='board'>
+      <% for(const article of articles) { %>
+        <section class='article'>
+          <div class='article_detail'>
+            <h1><%= article.title %></h1>
+            <% if(userId && Number(userId) === article.UserId) { %>
+              <a class='update_article' href=<%= `/update/${article.id}`%>>編輯</a>
+            <% } %>
+            <div class='article_info'>
+              <img src="/img/watch-later-24-px@2x.png" width='14px' height='14px' />
+              <div><%= (String(article.createdAt)).substring(4,21)  %></div>
+              <img src="/img/folder-24-px@2x.png" width='14px' height='14px' />
+              <div><%= article.Tag.name %></div>
+            </div>
+            <div class='article_content'>
+              <%= article.content %>
+            </div>
+            <a href='<%= `/article/${article.id}`%>' class='read_more_btn'>READ MORE</a>
+          </div>
+        </section>
+      <% } %>
+    </div>
+  </div>
+  <div class='footer'>
+    <%- include('../template/footer') %>
+  </div>
+</body>
+</html>
+

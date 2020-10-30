@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/main') %>
+  </nav>
+  <div class='lottery' style=<%= `background-image:url(${result.imgUrl});`%>>
+    <section class='lottery__result' >
+      <h2><%= result.name %></h2>
+      <div>恭喜獲得 <%= result.discription %></div>
+      <div class='go__lottery'><a href='/lottery'>我要抽獎</a></div>
+    </section>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/admin') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>管理後台</h2>
+      <div class='admin__list'>
+        <div><a href='/admin/menu'>菜單管理</a></div>
+        <div><a href='/admin/lottery'>抽獎管理</a></div>
+        <div><a href='/admin/faq'>常見問題管理</a></div>
+        <div><a href='/'>回餐廳首頁</a></div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

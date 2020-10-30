@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head') %>
+</head>
+<body>
+  <div class='navbar'>
+    <%- include('../template/navbar') %>
+  </div>
+  <div class='welcome-block'>
+    <%- include('../template/welcomeBlock') %>
+  </div>
+  <div class="login-wrapper">
+    <h2>Register</h2>
+    <form method="POST" action="/register">
+      <div class="input__wrapper">
+        <div class="input__label">USERNAME</div>
+        <input class="input__field" type="text" name="username" />
+      </div>
+      <div class="input__wrapper">
+        <div class="input__label">nickname</div>
+        <input class="input__field" type="text" name="nickname" />
+      </div>
+      <div class="input__wrapper">
+        <div class="input__label">PASSWORD</div>
+        <input class="input__field" type="password" name="password" />
+      </div>
+      <% if(errorMessage) { %>
+        <h3 class='error_message'><%= errorMessage %></h3>
+      <% } %>
+      <input type='submit' value="註冊新會員" />
+    </form>
+  </div>
+  <div class='footer'>
+    <%- include('../template/footer') %>
+  </div>
+</body>
+</html>

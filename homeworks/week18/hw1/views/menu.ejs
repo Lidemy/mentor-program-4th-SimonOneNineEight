@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/main') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/main') %>
+  </nav>
+  <div class='wrapper'>
+    <div class='banner__menu'></div>
+  </div>
+  <div class='wrapper'>
+    <section class='section'>
+      <h2 class='section__title'>熱銷搶購中</h2>
+      <div class='section__images'>
+        <div><img src='img/f-001.png'/></div>
+        <div><img src='img/f-002.png'/></div>
+        <div><img src='img/f-003.png'/></div>
+      </div>
+    </section>
+  </div>
+  <div class='wrapper'>
+    <div class='intro'>
+      <div class='intro__img'></div>
+      <div class='intro__detail'>
+        <div class='intro__detail__title'>
+          在家也能輕鬆<br>
+          咬一口我們的鮮甜清爽
+        </div>
+        <div class='intro__detail__content'>
+          您再也不必受限於時間或地點，隨時隨地透過我們24小時的線上購物選購，咬一口廚房堅持以細選食材、輕盈口感，呈現食材本身的原滋原味。<br><br>
+          我們將咬一口的經典菜色研發製成相應當季的包裝食品及各式精美的伴手禮盒。將剛出爐的新鮮迅速送達家人手中，也適合與更多喜愛咬一口的親朋好友分享難得的健康滋味。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='wrapper'>
+    <div class='wrapper__menu'>
+      <section class='menu'>
+        <div class='menu__title'>立 即 輕 鬆 選 購</div>
+        <div class='menu__down__arrow'>
+          <img src="https://img.icons8.com/ios/20/000000/double-down.png"/>
+        </div>
+        <div class='menu__list'>
+          <% for(const menu of menus) { %>
+            <div class='menu__list__item'>
+              <div class='menu__list__img' style=<%=`background-image:url(${menu.image});`%>></div>
+              <div class='menu__list__name'><span><%=menu.name%></span> | <span><%=menu.price%></span></div>
+              <div class='menu__list__cart'><a href=#>加入購物車</a></div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class='wrapper'>
+    <section class='section'>
+      <div class='menu__title'>還 是 想 要 親 身 體 會 我 們 的 服 務 ？
+      </div>
+        <div class='menu__down__arrow'>
+          <img src="https://img.icons8.com/ios/20/000000/double-down.png"/>
+        </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0027469618954!2d121.56235021539622!3d25.03398084444538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5L-h576p6Lev5LqU5q61N-iZnw!5e0!3m2!1szh-TW!2stw!4v1595486787794!5m2!1szh-TW!2stw" width=90% height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

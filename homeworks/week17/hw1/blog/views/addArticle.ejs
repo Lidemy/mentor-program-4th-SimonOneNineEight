@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head') %>
+</head>
+<body>
+  <div class='navbar'>
+    <%- include('../template/navbar') %>
+  </div>
+  <div class='welcome-block'>
+    <%- include('../template/welcomeBlock') %>
+  </div>
+  <div class='site-body'>
+    <div class='board'>
+      <section class='article'>
+        <h1 class='add_article_h1'>發表文章 ：</h1>
+        <form class='add_article_form' method='POST' action='/article''>
+          <div><input name='title' placeholder='請輸入文章標題...'/></div>
+          <div><select name='TagId'>
+            <option value='' disabled selected>請輸入文章分類</option>
+            <% for(const tag of tags) { %>
+              <option value=<%= tag.id %>><%= tag.name %></option>
+            <% } %>
+          </select></div>
+          <div><textarea name='content' rows='5'></textarea></div>
+          <div class='submit-btn'>
+            <h3 class='error_message'><%= errorMessage %></h3>
+            <button type='submit'>送出文章</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <div class='footer'>
+    <%- include('../template/footer') %>
+  </div>
+</body>
+</html>
