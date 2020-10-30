@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%- include('../template/main/head') %>
+  <%- include('../template/head/main') %>
 </head>
 <body>
   <nav class='navbar'>
-    <%- include('../template/main/navbar') %>
+    <%- include('../template/navbar/main') %>
   </nav>
   <div class='wrapper'>
     <section class='banner'>
@@ -76,53 +76,31 @@
   <div class='wrapper'>
     <section class='FAQ section' id='FAQ'>
       <h2 class='section__title'>FAQ - 常見問題</h2>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q1:</div>
-          <div class='FAQ__question-content'>如何辦理退貨？</div>
+      <% let questionCount = 1 %>
+      <% for(const faq of faqs) { %>
+        <div class='FAQ__detail'>
+          <div class='FAQ__question'>
+          <div class='FAQ__question-count'><%=`Q${questionCount}:`%></div>
+            <div class='FAQ__question-content'><%=faq.question%></div>
+          </div>
+          <div class='FAQ__answer hide-content'><%=faq.answer%></div>
         </div>
-        <div class='FAQ__answer hide-content'>請至『我的帳戶→訂單查詢相關』點選「取消/退貨」，或「換貨」服務選項，確認所要取消或辦理退貨的商品後，按下「退貨」/「換貨」鈕，則將立即為您辦理訂單取消、退/換貨事宜，若該筆訂單無法線上「取消/退貨」，則請於網頁點選「聯絡客服」，將由網路客服人員為您服務。</div>
-      </div>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q2:</div>
-          <div class='FAQ__question-content'>目前提供哪些付款方式？</div>
-        </div>
-        <div class='FAQ__answer hide-content'>各項商品由於出貨單位不同，若選擇之商品無法使用貨到付款，表示此商品為供應商出貨，僅提供信用卡付款。如無信用卡，則建議客戶可委由親友或家人為訂購人，由該訂購人使用其本人信用卡訂購，配送至您指定的收貨地址，此方式提供參考。</div>
-      </div>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q3:</div>
-          <div class='FAQ__question-content'>線上刷卡如何操作呢？</div>
-        </div>
-        <div class='FAQ__answer hide-content'>線上刷卡的使用方式也超簡單，只要您確認您當次的購物清單與金額都無誤，就可立即到匯款上傳系統，登入個人帳號密碼後，點選"線上刷卡方式"，確認收件住址後，再進行刷卡確認程序即可～</div>
-      </div>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q4:</div>
-          <div class='FAQ__question-content'>如何查詢目前訂單的處理情況？</div>
-        </div>
-        <div class='FAQ__answer hide-content'>您於登入會員後，至『我的帳戶』→『訂單管理』查詢配送狀況，訂單狀態：配送中-表示已通知廠商出貨；已配送-表示廠商已送交郵局或貨運寄送。若您當時選擇首次購買，則於此頁面下方依訂單編號進行訂單查詢，一樣可以確認訂單配送狀態。</div>
-      </div>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q5:</div>
-          <div class='FAQ__question-content'>訂單成立後，是否可以取消或是更改訂單數量及商品？</div>
-        </div>
-        <div class='FAQ__answer hide-content'>訂單成立後無法更改訂購數量，如需增加訂購品項，請您重新下單選購，再將原訂單辦理退貨即可。</div>
-      </div>
-      <div class='FAQ__detail'>
-        <div class='FAQ__question'>
-          <div class='FAQ__question-count'>Q6:</div>
-          <div class='FAQ__question-content'>我想購買的商品已經缺貨，什麼時候會進貨呢？</div>
-        </div>
-        <div class='FAQ__answer hide-content'>緣份到了你自然會看到他有貨的時候哦～</div>
-      </div>
+      <% } %>
     </section>
   </div>
   <footer>
     <%- include('../template/footer') %>
   </footer>
-  <script src='index.js'></script>
+  <script>
+    const elements = document.querySelectorAll('.FAQ__detail');
+    for (const element of elements) {
+      element.addEventListener('click',
+        (e) => {
+          const answer = element.querySelector('.FAQ__answer');
+          answer.classList.toggle('hide-content');
+        }
+      );
+    }
+  </script>
 </body>
 </html>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%- include('../template/admin/head') %>
+  <%- include('../template/head/admin') %>
 </head>
 <body>
   <nav class='navbar'>
-    <%- include('../template/admin/navbar') %>
+    <%- include('../template/navbar/lottery') %>
   </nav>
   <div class='lottery'>
     <section class='lottery__box'>
       <h2>編輯獎項</h2>
       <div class='login__info'>
-        <form method='POST' action=<%=`/update/${prize.id}`%>>
+        <form method='POST' action=<%=`/prize/update/${prize.id}`%>>
           <div class="input__wrapper">
             <div class="input__label">獎項名稱：</div>
             <input class="input__field" type="text" name="name" value=<%= `${prize.name}` %> />

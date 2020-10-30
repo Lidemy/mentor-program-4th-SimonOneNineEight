@@ -1,5 +1,5 @@
 const db = require('../models')
-const {Prize,User} = db
+const {Prize,User,Menu} = db
 
 const userController = {
   login: (req, res) => {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../template/head/admin') %>
+</head>
+<body>
+  <nav class='navbar'>
+    <%- include('../template/navbar/lottery') %>
+  </nav>
+  <div class='lottery'>
+    <section class='lottery__box'>
+      <h2>獎品管理</h2>
+      <div class='lottery__info'>
+        <div class='lottery__info__title'>獎品列表：</div>
+          <% for(const prize of prizes) { %>
+            <div class='lottery__info__detail'>
+              <div class='lottery__info__content'>
+                <div class='Prize_name'><%= prize.name %></div>
+                <div class='Prize_percentage'>中獎機率：<%= Math.round(prize.percentage *= 100) %>%</div>
+              </div>
+              <% if(userSessionId) { %>
+                <div class='lottery__info__modify'>
+                  <a class='prize__modify-btn' href=<%=`/prize/${prize.id}`%>>MORE</a>
+                  <a class='prize__modify-btn' href=<%=`/prize/update/${prize.id}`%>>UPDATE</a>
+                  <a class='prize__modify-btn' href=<%=`/prize/delete/${prize.id}`%>>DELETE</a>
+                </div>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+        <div class='total__percentage'>
+          總共中獎機率：<%= percentage %>%
+        </div>
+          <div class='errorMessage'><%= percentageError %></div>
+      </div>
+  </div>
+  <footer>
+    <%- include('../template/footer') %>
+  </footer>
+</body>
+</html>

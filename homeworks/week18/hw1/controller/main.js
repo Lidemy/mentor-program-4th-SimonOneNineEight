@@ -1,24 +1,30 @@
 const db = require('../models')
-const Prize = db.Prize
-const User = db.User
+const {Prize,User,Menu,Faq} = db
 
 const mainController = {
   init: (req, res) => {
     Prize.findAll().then(prizes => {
-      res.render('main', {
-        prizes
+      Faq.findAll().then(faqs => {
+        res.render('main', {
+          prizes,
+          faqs,
+        })
       })
     })
   },
 
-  getAll: (req, res) => {
+  lottery: (req, res) => {
     Prize.findAll().then(prizes => {
-      res.json(prizes)
+      res.render('lottery', {prizes,})
     })
   },
 
   menu: (req, res) =>  {
-    res.render('menu')
+    Menu.findAll({where:{isDeleted:0,}}).then(menus => {
+      res.render('menu',{
+        menus,
+      })
+    })
   }
 }
 

@@ -1,0 +1,11 @@
+<div class='site-name'><a href='/admin'>Just A Bit! - lottery</a>
+</div>
+<ul class='navbar__list'>
+  <li><a href='/lottery'>抽個大獎</a></li>
+  <% if(!userSessionId) { %>
+    <li><a href='/login'>登入</a></li>
+  <% } else { %>
+    <li><a href='/add-prize'>新增獎項</a></li>
+    <li><a href='/logout'>登出</a></li>
+  <% } %>
+</ul>

@@ -494,7 +494,7 @@ template {
   list-style: none;
 }
 .lottery__info {
-  margin: 18px 20px;
+  margin: -5px 20px 18px;
 }
 .lottery__info__title {
   font-family: MicrosoftJhengHei;
@@ -505,7 +505,6 @@ template {
   padding-top: 3px;
 }
 .lottery__info__content {
-  max-width: 319px;
   font-family: MicrosoftJhengHei;
   font-size: 16px;
   text-align: left;
@@ -534,6 +533,37 @@ template {
   color: white;
   font-size: 24px;
   padding: 20px 0;
+}
+
+.faq__info__detail {
+  padding: 5px 0;
+  margin: 15px 10px;
+  border-bottom: 1px dotted black;
+}
+.faq__info__modify {
+  text-align: right;
+}
+
+.prize__modify {
+  padding-right: 20px;
+  text-align: right;
+}
+
+.admin__list {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  width: 60%;
+}
+.admin__list div {
+  padding: 30px 0 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #489846;
+}
+.admin__list a {
+  text-decoration: none;
+  color: #489846;
+  font-size: 18px;
 }
 
 .prize__modify-btn {

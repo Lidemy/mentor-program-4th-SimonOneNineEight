@@ -1,20 +1,18 @@
 const db = require('../models')
-const Prize = db.Prize
-const User = db.User
+const {Prize,User,Menu,Faq} = db
 
 const adminController = {
-  getAll: (req, res) => {
-    Prize.findAll().then(prizes => {
-      res.json(prizes)
-    })
+  init: (req, res) => {
+    res.render('admin')
   },
 
-  admin:(req, res) => {
+  lottery:(req, res) => {
+    if(!req.session.userSessionId) return res.redirect('/admin')
     Prize.findAll().then(prizes => {
       Prize.sum('percentage').then(percentage => {
         let percentageError=''
         if(percentage > 1) percentageError = '中獎機率超過 100%'
-        res.render('admin',{
+        res.render('lotteryAdmin',{
           prizes,
           percentage: Math.round(percentage *= 100),
           percentageError,
@@ -22,6 +20,24 @@ const adminController = {
       })
     })
   },
+
+  menu: (req, res) => {
+    if(!req.session.userSessionId) return res.redirect('/admin')
+    Menu.findAll({where: {isDeleted: 0}}).then(menus => {
+      res.render('menuAdmin', {
+        menus,
+      })
+    })
+  },
+
+  faq: (req, res) => {
+    if(!req.session.userSessionId) return res.redirect('/admin')
+    Faq.findAll().then(faqs => {
+      res.render('faqAdmin', {
+        faqs,
+      })
+    })
+  }
 }
 
 module.exports = adminController

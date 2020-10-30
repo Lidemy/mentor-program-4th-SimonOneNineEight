@@ -33,7 +33,7 @@
     }
   }
   &__info{
-    margin: 18px 20px;
+    margin: -5px 20px 18px;
     &__title {
       font-family: MicrosoftJhengHei;
       font-size: 18px;
@@ -43,7 +43,6 @@
       padding-top: 3px;
     }
     &__content{
-      max-width: 319px;
       font-family: MicrosoftJhengHei;
       font-size: 16px;
       text-align: left;
@@ -73,6 +72,39 @@
       font-size: 24px;
       padding: 20px 0;
     }
+  }
+}
+
+.faq__info{
+  &__detail{
+    padding: 5px 0;
+    margin: 15px 10px;
+    border-bottom: 1px dotted black;
+  }
+  &__modify{
+    text-align: right;
+  }
+}
+
+.prize__modify{
+  padding-right: 20px;
+  text-align: right;
+}
+
+.admin__list{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  width: 60%;
+  & div {
+    padding: 30px 0 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $color-primary;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 18px;
   }
 }
 

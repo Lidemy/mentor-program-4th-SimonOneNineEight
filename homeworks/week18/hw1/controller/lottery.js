@@ -1,14 +1,7 @@
 const db = require('../models')
-const Prize = db.Prize
-const User = db.User
+const {Prize,User,Menu} = db
 
 const lotteryController = {
-  lottery: (req, res) => {
-    Prize.findAll().then(prizes => {
-      res.render('lottery', {prizes,})
-    })
-  },
-
   getLottery: (req, res) => {
     Prize.findAll().then(prizes => {
       const prizeIdArr = []
@@ -54,7 +47,7 @@ const lotteryController = {
       })
     }).catch(error => {
       console.log(error)
-      res.redirect('/admin')
+      res.redirect('/admin/lottery')
     })
   },
 
@@ -69,13 +62,13 @@ const lotteryController = {
     if(!UserId) return res.redirect('/admin')
     if(!name || !percentage || !imgUrl || !discription) {
       req.flash('errorMessage', '請填入所有欄位')
-      return res.redirect('/addPrize')
+      return res.redirect('/add-prize')
     }
     Prize.sum('percentage').then(total => {
       const totalPercentage = total + Number(percentage)
       if(totalPercentage > 1) {
         req.flash('errorMessage', '總中獎機率超過 100%')
-        return res.redirect('/addPrize')
+        return res.redirect('/add-prize')
       }
       Prize.create({
         name,
@@ -84,10 +77,10 @@ const lotteryController = {
         discription,
         UserId,
       }).then(newPrize => {
-        res.redirect('/admin')
+        res.redirect('/admin/lottery')
       }).catch(error => {
         console.log(error)
-        res.redirect('/admin')
+        res.redirect('/admin/lottery')
       })
     })
   },
@@ -124,10 +117,10 @@ const lotteryController = {
           imgUrl,
           discription,
         },{where: {id: prizeId},}).then(newPrize => {
-          res.redirect('/admin')
+          res.redirect('/admin/lottery')
         }).catch(error => {
           console.log(error)
-          res.redirect('/admin')
+          res.redirect('/admin/lottery')
         })
       })
     })
@@ -140,10 +133,10 @@ const lotteryController = {
     Prize.destroy({
       where: {id: prizeId,},
     }).then(()=> {
-      res.redirect('/admin')
+      res.redirect('/admin/lottery')
     }).catch(error => {
       console.log(error)
-      res.redirect('/admin')
+      res.redirect('/admin/lottery')
     })
   },
 

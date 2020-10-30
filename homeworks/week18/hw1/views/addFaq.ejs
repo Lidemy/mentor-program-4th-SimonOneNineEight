@@ -5,22 +5,22 @@
 </head>
 <body>
   <nav class='navbar'>
-    <%- include('../template/navbar/admin') %>
+    <%- include('../template/navbar/faq') %>
   </nav>
   <div class='lottery'>
     <section class='lottery__box'>
-      <h2>登入</h2>
+      <h2>新增常見問題</h2>
       <div class='login__info'>
-        <form method='POST' action='/login'>
+        <form method='POST' action='/faq'>
           <div class="input__wrapper">
-            <div class="input__label">USERNAME</div>
-            <input class="input__field" type="text" name="username" />
+            <div class="input__label">常見問題：</div>
+            <input class="input__field" type="text" name="question" />
           </div>
           <div class="input__wrapper">
-            <div class="input__label">PASSWORD</div>
-            <input class="input__field" type="password" name="password" />
+            <div class="input__label">問題解答：</div>
+            <textarea class="input__field" type="text" rows="5" name="answer" ></textarea>
           </div>
-          <input type='submit' value="登入" class='login_btn' />
+          <input type='submit' value="新增常見問題" class='login_btn' />
         </form>
         </div>
         <% if(errorMessage) { %>
@@ -31,6 +31,5 @@
   <footer>
     <%- include('../template/footer') %>
   </footer>
-  <script src='index.js'></script>
 </body>
 </html>

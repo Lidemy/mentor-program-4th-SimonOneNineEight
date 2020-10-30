@@ -1,10 +1,7 @@
 'use strict';
-
-const { INTEGER } = require("sequelize/types");
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Prizes', {
+    await queryInterface.createTable('Menus', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -12,16 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
-      imgUrl: {
-        type: Sequelize.STRING
+      prize: {
+        allowNull: false,
+        type: Sequelize.INTEGER
       },
-      discription: {
-        type: Sequelize.STRING
+      image: {
+        allowNull: false,
+        type: Sequelize.BLOB
       },
-      percentage: {
-        type: Sequelize.FLOAT
+      isDeleted: {
+        allowNull: false,
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -30,15 +31,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      },
-      UserId: {
-        allowNull: false,
-        type: Sequelize.INTEGER
-      },
+      }
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Prizes');
+    await queryInterface.dropTable('Menus');
   }
 };
-

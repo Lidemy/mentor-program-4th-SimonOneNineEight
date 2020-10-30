@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Ss121549!",
-    "database": "lottery",
+    "database": "restaurant",
     "host": "3.23.99.109",
     "dialect": "mysql"
   },
