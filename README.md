@@ -1,7 +1,5 @@
 # 程式導師實驗計畫第四期
 
-備註：十六週以後的課程尚未完成，作業也還沒決定
-
 ## 這是什麼
 
 [程式導師實驗計畫第四期](https://bootcamp.lidemy.com)是一個為期六個月的計畫，要求學生付出一定的時間（每週至少付出三十小時），希望能在結業時培養出合格的（意思就是找得到工作）的工程師，並且在就職後依舊能持續成長，成為好的工程師。
@@ -244,7 +242,7 @@ Mindset 建立：
 - [ ] P1 你知道什麼是 API
 - [ ] P1 你會使用 node.js 寫出串接 API 的程式
 - [ ] P1 你知道 HTTP method 有哪些
-- [ ] P1 你知道基本的 HTTP statud code，像是 200、301、400、404、500
+- [ ] P1 你知道基本的 HTTP status code，像是 200、301、400、404、500
 
 ### 第五週（07/13 ~ 07/19）：複習週
 
@@ -376,11 +374,12 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 （「基礎實戰：Job board 職缺報報」跟「基礎實戰：Blog 部落格」屬於比較早期拍的影片，程式碼的風格跟其他的可能會不一樣，建議你可以先跳過這兩個段落，實戰的部分直接看「真正的實戰：留言板 - 初階實作篇」，如果覺得看不太懂，再回來看這兩個早期拍的）
 
-並且透過以下幾篇文章加深對 Cookie 與 Session 的理解：
+並且透過以下幾篇文章加深對 Cookie 與 Session 的理解（第一篇要看懂，二三篇大概看過就好，看不懂很正常，沒有關係）：
 
 1. [白話 Session 與 Cookie：從經營雜貨店開始](https://medium.com/@hulitw/session-and-cookie-15e47ed838bc)
 2. [淺談 Session 與 Cookie：一起來讀 RFC](https://blog.huli.tw/2019/08/09/session-and-cookie-part2/)
-3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)
+3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)  
+
 
 [HW9 作業連結](/homeworks/week9)
 
@@ -414,6 +413,8 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 如果你點進去看到一片白畫面，這是正常的，並不是網頁壞掉。難道網頁看不見東西就是真的沒東西嗎？
 
+看到 `{s: "恭喜破關！flag: m3nT0rPr0GRAm666", error: false}` 就代表你已經全過囉，沒錯，關卡就是這麼少。
+
 ### 闖關遊戲
 
 一共十關，看你能闖到第幾關：[r3:0 異世界網站挑戰](https://r30challenge.herokuapp.com/)（特別感謝第三期 @minw 製作遊戲）。
@@ -430,9 +431,11 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 ####  指定教材
 
-把 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分繼續看完，看到「真正的實戰：留言板 - 再次修正問題篇」結束，有時間的話也可以把整堂課都看完。
+繼續看 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分，看到「真正的實戰：留言板 - 再次修正問題篇」結束就好，有時間的話也可以把整堂課都看完。
 
-也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0)
+也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
+
+想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0) （有時間再看）
 
 有一個與資安相關的東西叫做 CSRF，在課程中沒有講，是考驗你自學能力的時候，推薦閱讀這篇：[讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
 
@@ -488,10 +491,22 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 3. Gulp
 4. Webpack
 
-也會幫大家補充一些 CSS 相關的知識，像是：
+主要是想讓大家稍微知道這些工具的使用而已，在之後的課程裡面不一定會實際用到。
+
+除了這個以外，也會幫大家額外補充一些重要的概念，像是：
+
+1. 什麼是 Promise？
+2. 什麼是 Fetch？
+
+在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：
 
 1. CSS Selector 權重的計算方式
 2. CSS Sprites 與 Data URI
+
+總而言之呢，這週的東西可能會比較雜一點，但主要可以分成兩個部分：
+
+1. 前端工具
+2. JS 與 CSS 補充概念
 
 #### 指定教材
 
@@ -503,40 +518,55 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
 
+其他的補充如下：
+
+1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
+2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
+3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
+4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
+5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
+
 [HW13 作業連結](/homeworks/week13)
 
 #### 自我檢測
 
 - [ ] P1 你知道 webpack 的目的以及原理
 - [ ] P1 你熟悉如何使用 webpack 進行模組化開發
+- [ ] P1 你知道如何使用 Promise
+- [ ] P2 你知道如何使用 fetch
 - [ ] P2 你知道 gulp 的目的以及原理
-- [ ] P2 你熟悉如何使用 gulp 建構自動化工作流程
-- [ ] P2 你知道 CSS 優化的一些小技巧
 - [ ] P2 你知道 CSS Sprites 與 Data URI 的優缺點
 - [ ] P2 你知道什麼是 uglify 與 minify
+- [ ] P3 你熟悉如何使用 gulp 建構自動化工作流程
+- [ ] P3 你知道 CSS 優化的一些小技巧
 
 ### 第十四週（09/14 ~ 09/20）：伺服器與網站部署
 
-有了自己的前後端程式之後，就可以開始來部署了。這週的重點會放在帶大家直接去買主機（AWS、[Digital Ocean](https://m.do.co/c/2e78666c0866)、Linode），並且了解如何連上主機。
+有了自己的前後端程式之後，就可以開始來部署了。這週的重點會放在帶大家直接去買主機（[AWS](https://aws.amazon.com/tw/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)、[Digital Ocean](https://m.do.co/c/2e78666c0866)、[GCP](https://cloud.google.com/free?hl=zh-tw)、Linode），並且了解如何連上主機。
+
+關於主機的部分，想要用哪一家的都可以，AWS 有一年免費的方案，GCP 則是部分服務沒有超過用量就免費，其他的應該都是要付費的。
 
 也會讓大家購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
 
-除此之外，也會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等。
+這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(_ _)>。
 
-這週也要特別感謝 [gandi](https://www.gandi.net/) 連續三期全額贊助了網域的費用 <(_ _)>。
+第四期學生請找助教索取網域的折扣碼（每人限一個），可以用來註冊 .tw 的域名。
 
+除此之外，也會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。
 
 #### 指定教材
 
-這週最重要的就是部署自己的網站，這邊會希望大家自己先查資料，試試看能不能靠自己就部署成功。
+這週最重要的就是部署自己的網站，這邊會希望大家自己先查資料，試試看能不能靠自己就部署成功，目標是把你之前的 PHP 網站放到自己的主機上，並且連 MySQL 都一起建好。
 
-若是不行的話，請參考以下幾篇：
+若是不行的話，請參考以下幾篇，或者是自行搜尋相關資訊：
 
 1. [部署 AWS EC2 遠端主機 + Ubuntu LAMP 環境 + phpmyadmin](https://github.com/Lidemy/mentor-program-2nd-yuchun33/issues/15)
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
 3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
+4. [[紀錄] 部屬 AWS EC2 雲端主機 + LAMP Server + phpMyAdmin](https://mtr04-note.coderbridge.io/2020/09/15/-%E7%B4%80%E9%8C%84-%08-%E9%83%A8%E5%B1%AC-aws-ec2-%E9%9B%B2%E7%AB%AF%E4%B8%BB%E6%A9%9F-/)
+5. [AWS EC2 佈署網站：卡關記錄](https://nicolakacha.coderbridge.io/2020/09/16/launch-website/)
 
-接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究。可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
+接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
 
 然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
 
@@ -571,23 +601,46 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這一週的作業除了心得以外，也提供了一個跟以往不太一樣的測驗：[網站前後端開發基礎測試](https://github.com/Lidemy/mentor-program-3rd/issues/5)，一共十題簡答題，答案預設是隱藏的，自己答完之後可以自己點開對答案。
 
+另外，這週會幫大家補充瀏覽器運作的相關知識，可以參考這一系列的文章：
+
+1. [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
+2. [中譯版](https://juejin.im/post/6844903679389073415)，其他 part 請自行搜尋
+
+看完以後可以看我之前對這些文章的導讀：[瀏覽器運作導讀](https://youtu.be/5iaNYpVedIU?t=2432)
+
 [HW15 作業連結](/homeworks/week15)
 
 ### 第十六週（09/28 ~ 10/04）：JavaScript 核心與物件導向
 
 這次的第一個重點在於物件導向，之前都沒有時間好好講過，這一週特別講一下物件導向。
 
-再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制。
+再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制，這邊有兩個地方要特別注意。
 
-第一個重點是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
+第一個是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
 
-第二個重點就是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
+第二個是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
 
 #### 指定教材
 
-1. 程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理
-2. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
-3. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+1. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
+2. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+可以搭配其他我寫的文章一起閱讀：
+
+1. [該來理解 JavaScript 的原型鍊了](https://blog.huli.tw/2017/08/27/the-javascripts-prototype-chain/)
+2. [深入探討 JavaScript 中的參數傳遞：call by value 還是 reference？](https://blog.huli.tw/2018/06/23/javascript-call-by-value-or-reference/)
+3. [我知道你懂 hoisting，可是你了解到多深？](https://blog.huli.tw/2018/11/10/javascript-hoisting-and-tdz/)
+4. [所有的函式都是閉包：談 JS 中的作用域與 Closure](https://blog.huli.tw/2018/12/08/javascript-closure/)
+5. [淺談 JavaScript 頭號難題 this：絕對不完整，但保證好懂](https://blog.huli.tw/2019/02/23/javascript-what-is-this/)
+6. [JavaScript 中的同步與非同步（上）：先成為 callback 大師吧！](https://blog.huli.tw/2019/10/04/javascript-async-sync-and-callback/)
+7. [覺得 JavaScript function 很有趣的我是不是很奇怪](https://blog.huli.tw/2020/04/18/javascript-function-is-awesome/)
+
+如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk) （內容有很多應該都該 JS201 類似，所以有時間再看就好，沒看也沒關係）
+
+物件導向的地方我自己沒有很熟，所以還在探索怎麼教會比較好，這邊有兩個第二期的影片，會用 PHP 跟 JavaScript 當範例。會用 PHP 是因為 JS 中的物件導向並不完整，而 PHP 的完整許多，但要注意影片中會在 PHP 跟 JS 中切換，建議大家只需要了解一些基本概念即可，不需要執著於一定要完全搞懂物件導向：
+
+1. [程式導師實驗計畫第二期：Week5-2：物件導向程式設計](https://www.youtube.com/watch?v=nZhzLcV9eHI&ab_channel=Lidemy%E9%8B%B0%E5%AD%B8%E9%99%A2)
+2. [Week5 物件導向（續）：繼承與 static](https://www.youtube.com/watch?v=k5TGAw7faNg&ab_channel=Lidemy%E9%8B%B0%E5%AD%B8%E9%99%A2)
 
 [HW16 作業連結](/homeworks/week16)
 
@@ -601,18 +654,25 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 - [ ] P1 你能夠舉出一個運用 Closure 的例子
 - [ ] P1 你知道 Prototype 在 JavaScript 裡是什麼
 - [ ] P1 你知道大部分情況下 this 的值是什麼
+- [ ] P2 你知道物件導向的基本概念（類別、實體、繼承、封裝）
 
 ### 第十七週（10/05 ~ 10/11）：現代後端開發（上）
 
 [Express](https://expressjs.com/) 是可以在 Node.js 環境下執行的輕量後端框架，自由度極高，也能夠快速開發出後端應用程式。
 
-跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不的寫法。
+跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不同的寫法。
 
 有了之前 PHP 以及 JS 的基礎，我相信學習 Express 會快速許多，因此在這一週裡面可以試試看能不能快速上手 Express 並完成作業。
 
+除了 Express 以外，這一週還要介紹一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射（mapping），優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
+
+而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
+
+最後會把這週的專案部署到免費的空間 [Heroku](https://www.heroku.com/)或是自己的主機（nginx + PM2）。
+
 #### 指定教材：
 
-1. [BE201] Express 與 Sequelize：「ORM 與 Sequelize」單元前所有內容
+1. [BE201] Express 與 Sequelize：全部
 
 [HW17 作業連結](/homeworks/week17)
 
@@ -620,31 +680,35 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 - [ ] P1 學習如何使用 Express 及其相關套件
 - [ ] P1 我理解為什麼會需要框架
+- [ ] P1 了解什麼是 ORM
+- [ ] P1 了解 ORM 的優缺點
+- [ ] P1 了解什麼是 N+1 problem 
+- [ ] P1 我知道如何部署 Node.js 應用程式到 heroku
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
 
-上一週我們學會了 Express，對基本的操作都已經很熟悉了。
+上週已經熟悉的基本的 Express + Sequelize 開發，而這一週我們會把之前做的餐廳網站移植過來 Express，並且加入後台的功能，讓我們可以有一個相對完整的專案。
 
-這一週要介紹的是一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射，優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
+這週會做的東西主要有：
 
-而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
+1. 移植餐廳網站
+2. 新增餐廳後台，管理菜單
+3. 新增餐廳後台，管理常見問題
 
-最後會使用 Nginx + PM2 來部署我們之前寫好的 Web Application。
+這週大致上需要用到的東西在上一週都學到了，核心概念跟上一週沒有什麼差，如果你有時間壓力的話，可以跳過這一週的作業。
 
 #### 指定教材
 
-[BE201] Express 與 Sequelize 全部看完
+1. [BE201] Express 與 Sequelize 全部看完
 
 [HW18 作業連結](/homeworks/week18)
 
 #### 自我檢測
 
-- [ ] P1 了解什麼是 ORM
-- [ ] P1 了解 ORM 的優缺點
-- [ ] P1 了解什麼是 N+1 problem 
-- [ ] P1 我知道如何使用 Nginx
-- [ ] P1 我知道如何使用 PM2
-- [ ] P1 我知道如何部署 Node.js 應用程式
+- [ ] P1 我能夠從頭把一個網站獨立建起來
+- [ ] P1 我知道如何部署 Node.js 的網站到自己的主機
+- [ ] P2 我知道如何使用 Nginx
+- [ ] P2 我知道如何使用 PM2
 
 ### 第十九週（10/19 ~ 10/25）：產品開發流程
 
@@ -652,9 +716,11 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這一週會帶大家看看學習系統在開發新功能時的一些記錄，讓大家看看產品開發流程會長什麼樣子。
 
-除了產品開發流程以外，這週也會帶大家練習全新的思考模式，並且做一個簡單的前端框架出來，幫以後的學習鋪路。
+然後這一週的作業呢，就是讓大家有充足的時間來規劃一下自己之後期末專案想要開發什麼樣的產品。
 
 #### 指定教材
+
+1. [PD101] 淺談產品開發與工作流程：全部
 
 [HW19 作業連結](/homeworks/week19)
 
@@ -682,22 +748,39 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 ### 第二十一週（11/02 ~ 11/08）：前端框架（一）
 
+備註：大家可以把 week21、22 當作一組，week 23、24 當作一組，因為 React 的地方比較難切，而且一週的時間我覺得不太夠，所以可以用兩週把課程完整看完再把作業一起寫完，可能會比較容易一些。
+
 終於要進入到前端框架 React 了（雖然嚴格來說 React 並不是一個框架，但搭配其他各種 React 生態系成員，其實就算是一個框架了）。
 
 這週會學習到 React 的基本應用以及原理，了解為什麼我們需要使用 React。
 
-延伸閱讀：[React 性能優化大挑戰：一次理解 Immutable data 跟 shouldComponentUpdate](https://blog.techbridge.cc/2018/01/05/react-render-optimization/)
-
 指定教材：
 
-1. [FE301] React 基礎：全部
-2. 程式導師實驗計畫第二期：Week12-1 React
-3. 程式導師實驗計畫第二期：Week12-2 React 續
-4. [官方教學](https://reactjs.org/tutorial/tutorial.html)
-5. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
+React 的核心概念之一叫做 component，要寫出這個 component 有兩種方式，一個是透過 class，一個是透過 function，前者就叫做 class component，後者叫做 function component。
 
+React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動，那就是多了一個東西叫做 hooks，讓 function component 也能擁有 state。
 
-[HW21 作業連結](/homeworks/week21/fe)
+這個對 React 生態系的影響很大，甚至改變了原本在寫 React 時的思考方式，是很大的變革，但滿多教材都是比較舊的內容，裡面會提到的東西叫做 class component。
+
+雖然說 class component 在很多 app 裡還是很常看到，但基本上新的 app 都是用 function component + hooks 在開發了，底下會把學習資源分成 function component + class component 兩塊，請先學習 function component，如果看不懂或有疑惑，再回去看 class component。
+
+#### function component 學習資源
+
+1. [FE302] React 基礎 - hooks 版本，看到「React 基礎」結束，應該就能寫出本週的作業了
+
+部署的部分可以參考 FE302 課程中的「部署 React App」，記得在交作業之前先部署好，助教才比較方便改作業。
+
+如果課程看不懂，可以額外參考：[從 Hooks 開始，讓你的網頁 React 起來](https://ithelp.ithome.com.tw/users/20103315/ironman/2668?page=1)
+
+#### class component 學習資源
+
+1. [FE301] React 基礎（Class component 版）：全部
+2. [官方教學](https://reactjs.org/tutorial/tutorial.html)
+3. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
+
+延伸閱讀：[React 性能優化大挑戰：一次理解 Immutable data 跟 shouldComponentUpdate](https://blog.techbridge.cc/2018/01/05/react-render-optimization/)
+
+[HW21 作業連結](/homeworks/week21)
 
 #### 自我檢測
 
@@ -710,60 +793,107 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 在上一週結束之後，大家應該對 React 有了一些基本的感覺，這一週我們要繼續培養對 React 的感覺，讓大家對 React 越來越熟練。
 
-除此之外也會教大家用 React Router 這一套 library，來實做前端的路由。
+除此之外也會教大家用 React Router 這一套 library，來實做前端的路由。然後也會在課程中帶大家做出一個半成品的 SPA 部落格，並交由各位把剩下的功能完成。
 
 指定教材：
 
-1. [FE301] React 基礎：全部
-2. 程式導師實驗計畫第二期：Week13-1 還是 React
-3. 程式導師實驗計畫第二期：Week13-2 依舊 React
+1. [FE302] React 基礎 - hooks 版本：全部
+2. [淺談新手在學習 SPA 時的常見問題：以 Router 為例](https://blog.huli.tw/2019/09/18/spa-common-problem-about-router/)
+3. [How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+4. [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 
-[HW22 作業連結](/homeworks/week22/fe)
+[HW22 作業連結](/homeworks/week22)
 
-延伸閱讀：[前後端分離與 SPA](https://blog.techbridge.cc/2017/09/16/frontend-backend-mvc/)、[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
+延伸閱讀：
+
+1. [前後端分離與 SPA](https://blog.techbridge.cc/2017/09/16/frontend-backend-mvc/)
+2. [跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
 
 #### 自我檢測
 
-- [ ] 我熟悉 React 的基本使用
-- [ ] 我知道如何使用 React Router 
-- [ ] 我了解 React Router 的目的
-- [ ] 我知道什麼是 Single Page Application
-- [ ] 我理解現在的前端與以往的差別
+- [ ] P1 我熟悉 React 的基本使用
+- [ ] P1 我知道如何使用 React Router 
+- [ ] P1 我了解 React Router 的目的
+- [ ] P1 我知道什麼是 Single Page Application
+- [ ] P1 我理解現在的前端與以往的差別
+- [ ] P1 我知道 class component 與 function component 的差異
+- [ ] P1 我知道 class component 的各個 lifecycle
+- [ ] P2 我知道每一個 hook 大概是在做什麼
 
 ### 第二十三週（11/16 ~ 11/22）：前端框架（三）
 
-在之前的 React 課程中，我們已經慢慢熟悉 React 的思考模式，可是還有一些問題還沒解決，雖然你現在感受不太到，但是在 App 慢慢變大之後就會碰到了。
+在之前的 React 課程中，我們已經慢慢熟悉 React 的思考模式，雖然說 React 有提供管理 state 相關的功能，但有些時候可能不太夠用。
 
-接續之前的課程，這一週會讓你的 Web App 變得更加完整，會導入一個新的東西：Redux，說明我們為什麼需要它。
+因此呢，Facebook 當初在推出 React 的時候，一併提出了另外一套應用程式的架構叫做 flux 來管理你的資料，以及如何改變這些資料。
+
+經過時間的演進，當初最早的 flux 架構經過社群的改良以後變成了各個 library，有著各種實作，而以 React 來說，最有名的就是一套叫做 Redux 的 library。
+
+雖然說 redux 與 flux 長得不太一樣，但我認為能理解 flux 的話有助於理解 redux，所以可以參考：
+
+1. [Flux: In-Depth Overview](https://facebook.github.io/flux/docs/in-depth-overview/)，這是官方當初推出 flux 時候的影片，很值得參考，也有講到 React 可以當做複習
+2. [Flux For Beginners](https://blog.andrewray.me/flux-for-stupid-people/)，淺顯易懂的教學
+3. [React/Flux in Action 實戰經驗分享](https://speakerdeck.com/coodoo/flux-in-action-shi-zhan-jing-yan-fen-xiang)，當初我入門時幫助我很多的投影片
+4. [從 Flux 與 MVC 的差異來簡介 Flux](https://blog.techbridge.cc/2016/04/29/introduce-flux-from-flux-and-mvc/)
 
 指定教材：
 
-1. 程式導師實驗計畫第二期：Week14-1 Redux
-2. 程式導師實驗計畫：Lesson 13-1 之 React + Redux
+1. [Redux 官方文件](https://redux.js.org/introduction/getting-started)
+2. [FE303] React 的好夥伴：Redux（看到 「實作簡易 todo list 結束就好」）
 
-[HW23 作業連結](/homeworks/week23/fe)
+Redux 的官方文件前陣子剛重寫過，我覺得寫得很棒，把 Redux 的許多重點講得十分清楚，因此我推薦大家從官方文件開始學習，除了這資源很棒以外，另一方面也是提前體驗「完全自學」的狀況。
+
+如果英文不太好，這邊也有舊版官方文件的中文版（只是跟新版差很多就是了）：
+
+1. [Redux 舊版文件中文版（2016 年）](https://chentsulin.github.io/redux/index.html)
+
+除了官方文件以外，也可以跟上面的課程穿插著看，應該能夠增進理解程度。
+
+如果你還有時間，可以參考第二期講解 redux 的影片：
+
+1. [程式導師實驗計畫第二期：Week14-1 Redux](https://www.youtube.com/watch?v=CrjEYMnix_8&fbclid=IwAR1Cy-0cw44dnMTExzzenmM3vTzWuTxxs4TpSV01wf29qb7m2rx0_ttRQ8M&ab_channel=Lidemy%E9%8B%B0%E5%AD%B8%E9%99%A2)
+
+[HW23 作業連結](/homeworks/week23)
 
 #### 自我檢測
 
-- [ ] 我理解 Redux 的目的以及原理
-- [ ] 我知道我們為什麼需要 Redux
+- [ ] P1 我理解 Redux 的目的以及原理
+- [ ] P1 我理解 Redux 的資料流
+- [ ] P1 我理解 Redux 當中各種重要元素，像是：dispatch, store, action, reducer 等等
+- [ ] P1 我知道我們為什麼需要 Redux
 
 ### 第二十四週（11/23 ~ 11/29）：前端框架（四）
 
-最後一週裡面我們將用 redux 來解決非同步操作的問題，讓大家知道如何利用它與 redux-promise 來解決非同步的一些問題。
+在上一週其實就已經把主要的課程都講完了，只剩下一個東西，那就是 redux middleware，這其實是在 redux 中相當重要的一個概念，因此本週的作業也會以這個為主。
+
+除此之外，這一週也會做一些額外的補充，幫大家補充幾個重要的議題，像是：
+
+1. 為什麼需要 SSR？SSR 該怎麼做？
+2. Next.js 框架介紹
+3. TypeScript 簡介
 
 指定教材：
 
-1. 第二期 Redux 補充講解：redux-thunk 與 redux-promise
-2. 程式導師實驗計畫：Lesson 13-2 之 React + Redux 下
-3. 第二期 React 補充：什麼是 super 以及生命週期的運用
-4. 第二期 React 補充：再來談談什麼是 this
+先把 [FE303] React 的好夥伴：Redux 全部看完，學習如何使用 redux-thunk，然後就可以開始做作業了。
 
-[HW24 作業連結](/homeworks/week24/fe)
+也非常推薦去看：[Redux Essentials, Part 5: Async Logic and Data Fetching#](https://redux.js.org/tutorials/essentials/part-5-async-logic)，有實際示範 redux-thunk 與 call API 的結合。
+
+再來看 Lidemy 上面 MTR04 裡的補充課程，學習 SSR, Next.js 以及 TypesScript 的基礎概念。
+
+同時也可以透過以下幾篇文章更理解 SSR，甚至是跟著文章一起實作看看：
+
+1. [React SSR | 從零開始實作 SSR — 基礎篇](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/server-side-rendering-ssr-in-reactjs-part1-d2a11890abfc)
+2. [React | 用實作了解 Server-Side Rendering 的運作原理](https://medium.com/starbugs/react-%E7%94%A8%E5%AF%A6%E4%BD%9C%E4%BA%86%E8%A7%A3-server-side-rendering-%E7%9A%84%E9%81%8B%E4%BD%9C%E5%8E%9F%E7%90%86-c6133d9fb30d)
+3. [跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://hulitw.medium.com/introduction-mvc-spa-and-ssr-545c941669e9)
+
+[HW24 作業連結](/homeworks/week24)
 
 #### 自我檢測
 
-- [ ] 我知道 Redux 如何搭配 middleware 解決非同步操作的問題
+- [ ] P1 我知道 Redux 如何搭配 middleware 解決非同步操作的問題
+- [ ] P1 我知道 CSR 與 SSR 的區別
+- [ ] P2 我知道怎麼實作 SSR
+- [ ] P2 我知道 Next.js 這個框架
+- [ ] P3 我知道 TypeScript 與 JavaScript 的差異
 
 ### 第二十五週（11/30 ~ 12/06）：Final Project
 

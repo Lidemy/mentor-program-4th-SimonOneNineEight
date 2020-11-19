@@ -4,7 +4,7 @@
 
 請你畫出一張短網址服務的後端系統架構圖，越詳細越好，可以考慮到如何增進效能、scaling 以及備份資料。
 
-沒靈感的話可參考：[短网址(short URL)系统的原理及其实现](https://hufangyun.com/2017/short-url/)、[Design TinyURL](https://leetcode.com/problems/design-tinyurl/description/)
+沒靈感的話可參考：[短网址(short URL)系统的原理及其实现](https://hufangyun.com/2017/short-url/)，或是用「短網址 系統設計」之類的關鍵字去搜尋。
 
 圖片可參考下圖（這是一張 Mobile 與 Web 前端如何跟後端溝通的圖，這示意圖只是大概講一下應該要怎麼畫，但你實際畫出來一定跟這個長得不一樣）：
 ![](http://ithelp.ithome.com.tw/upload/images/20161211/20091346nyV3Lex42r.jpg)
@@ -26,8 +26,8 @@
 
 ## 挑戰題
 
-在主機上使用 nginx 來當伺服器而不是 Apache。
+原本在主機上你應該是使用 Apache 來當 Server，現在請你試試看改用 nginx 來當伺服器。
 
 ## 超級挑戰題
 
-使用 Docker 把 PHP 留言板以及資料庫都包進去，並且使用 Docker 來部署。
+原本你部署的方式應該是把 PHP 檔案都上傳到主機上面，現在請你試試看用 Docker 把 PHP 留言板以及資料庫都包進去，並且使用 Docker 來部署。
